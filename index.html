@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grui817 - 个人主页</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; padding: 50px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .header { text-align: center; margin-bottom: 40px; }
+        .avatar { width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 48px; color: white; font-weight: bold; }
+        h1 { font-size: 32px; margin-bottom: 10px; color: #2d3748; text-align: center; }
+        .subtitle { font-size: 18px; color: #718096; text-align: center; margin-bottom: 30px; }
+        .section { margin-bottom: 35px; }
+        .section-title { font-size: 20px; font-weight: 600; color: #2d3748; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #e2e8f0; }
+        .section-content { color: #4a5568; line-height: 1.8; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-tag { background: #edf2f7; color: #4a5568; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500; }
+        .projects { display: grid; gap: 15px; margin-top: 15px; }
+        .project-card { background: #f7fafc; padding: 20px; border-radius: 12px; border-left: 4px solid #667eea; }
+        .project-title { font-weight: 600; color: #2d3748; margin-bottom: 8px; }
+        .project-desc { color: #718096; font-size: 14px; }
+        .contact { text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid #e2e8f0; }
+        .contact-links { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .contact-link { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #667eea; color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: transform 0.2s, box-shadow 0.2s; }
+        .contact-link:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102,126,234,0.4); }
+        .footer { text-align: center; margin-top: 40px; color: #a0aec0; font-size: 14px; }
+        @media (max-width: 600px) { .container { padding: 30px 20px; } h1 { font-size: 24px; } .contact-links { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">G</div>
+            <h1>grui817</h1>
+            <p class="subtitle">长租公寓运营专家 | 数据驱动决策</p>
+        </div>
+        <div class="section">
+            <h2 class="section-title">关于我</h2>
+            <div class="section-content">
+                <p>深耕长租公寓行业多年，专注于运营数据分析、项目管理和团队效能提升。擅长通过数据洞察优化业务流程，推动业绩增长。</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">核心技能</h2>
+            <div class="skills">
+                <span class="skill-tag">长租公寓运营</span>
+                <span class="skill-tag">数据分析</span>
+                <span class="skill-tag">Excel 高级应用</span>
+                <span class="skill-tag">项目管理</span>
+                <span class="skill-tag">团队管理</span>
+                <span class="skill-tag">经营分析</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">工作经历</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-title">长租公寓运营专家</div>
+                    <div class="project-desc">负责多项目管理，涵盖 3,668 间房源运营，通过数据分析和流程优化实现业绩增长。</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">AI 工牌及三曲线项目运营</div>
+                    <div class="project-desc">设计考核指标体系，搭建经营模拟器/预测模型，优化业务运营效率。</div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">专业领域</h2>
+            <div class="section-content">
+                <p>• 长租公寓全流程运营管理（咨询-来访-签约漏斗、到期续约率等）</p>
+                <p>• 经营数据异常检测与诊断</p>
+                <p>• 竞品分析与市场策略制定</p>
+                <p>• 门店运营与团队培训体系搭建</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2 class="section-title" style="border: none;">联系我</h2>
+            <div class="contact-links">
+                <a href="https://github.com/grui817" class="contact-link" target="_blank">GitHub</a>
+                <a href="mailto:your-email@example.com" class="contact-link">邮箱</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 grui817. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
